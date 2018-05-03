@@ -5,7 +5,9 @@
  */
 
 import React, {Component} from 'react';
+
 import {
+  NativeModules,
   Platform,
   StyleSheet,
   Text,
@@ -18,10 +20,11 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu'
 });
+const MediaPlayer = NativeModules.MediaPlayer;
+MediaPlayer.playMusic('https://www.computerhope.com/jargon/m/example.mp3');
 
 export default class App extends Component<{}> {
   getName = () => 'Yo'
-
   render () {
     return (
       <View style={styles.container}>
