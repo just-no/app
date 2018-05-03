@@ -21,7 +21,7 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu'
 });
 const MediaPlayer = NativeModules.MediaPlayer;
-MediaPlayer.playMusic('https://www.computerhope.com/jargon/m/example.mp3', (msg) => {
+MediaPlayer.playMusic('https://www.computerhope.com/jargon/m/example.mp3', () => {
   // console.log(msg);
   MediaPlayer.playMusic('https://www.computerhope.com/jargon/m/example.mp3', () => {
     // console.log('yo');
