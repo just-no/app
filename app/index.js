@@ -22,9 +22,9 @@ const instructions = Platform.select({
 });
 const MediaPlayer = NativeModules.MediaPlayer;
 MediaPlayer.playMusic('https://www.computerhope.com/jargon/m/example.mp3', (msg) => {
-  console.log(msg);
+  // console.log(msg);
   MediaPlayer.playMusic('https://www.computerhope.com/jargon/m/example.mp3', () => {
-    console.log('yo');
+    // console.log('yo');
   });
 });
 
